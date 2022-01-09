@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Menampilkan Produk Elektronik</title>
+	</head>
+<script language="javascript">
+	function validasi()
+	{
+		barang=document.form.data.value;
+		
+	switch (barang)
+	{
+		case '1' : document.write("<br>Nama Barang  : Televisi 21inc" + 
+								  "<br>Harga        : Rp. 1.500.000" +
+								  "<br>Discount 10% : Rp. 150.000" +
+								  "<br>Harga Bayar  : Rp. 1.350.000");
+								  break;
+		case '2' : document.write("<br>Nama Barang  : Kulkas" + 
+								  "<br>Harga        : Rp. 1.880.000" +
+								  "<br>Discount 8%  : Rp. 148.000" +
+								  "<br>Harga Bayar  : Rp. 1.702.000");
+								  break;
+		case '3' : document.write("<br>Nama Barang  : Mesin Cuci" + 
+								  "<br>Harga        : Rp. 2.150.000" +
+								  "<br>Discount 15% : Rp. 322.500" +
+								  "<br>Harga Bayar  : Rp. 1.827.500");
+								  break;
+		default : document.write("Angka yang dimasukan salah");
+		}
+}		
+</script>
+<body="center">
+	<h3>Daftar Harga Barang</h3>
+	1. Televisi 21 inc</br>
+	2. Kulkas</br>
+	3. Mesin Cuci</br></br>
+	
+	<form name="form">
+	Ketik nomor barang <input type="text" name="data"></br>
+	<input type="button" value="Proses" onClick="validasi()">
+	</form>
+</body>
+</html> 
